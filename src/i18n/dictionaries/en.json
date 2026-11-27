@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Anuar Zhenissov — Software Engineer, AI Engineer",
-    "description": "Anuar Zhenissov, Software Engineer and AI Engineer from Astana: Python and Go backends, React + TypeScript, AI engineering. Projects, education and contacts."
+    "title": "Anuar Zhenissov — Software Engineering student · Backend & AI development",
+    "description": "Anuar Zhenissov, a Software Engineering student from Astana: Python and Go backends, React + TypeScript and AI-assisted development. Projects, education and contacts."
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -33,7 +33,7 @@
   "projects": {
     "title": "Projects",
     "stack": "Technologies",
-    "repo": "Code",
+    "repo": "Source code",
     "demo": "Demo"
   },
   "learning": {

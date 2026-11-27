@@ -25,12 +25,13 @@ export function LanguageSwitcher({ current, label }: LanguageSwitcherProps) {
               hrefLang={locale}
               lang={locale}
               title={localeNames[locale]}
+              // Screen readers get the full name; it keeps the visible code (WCAG 2.5.3 label in name).
+              aria-label={`${localeNames[locale]} (${locale.toUpperCase()})`}
               aria-current={locale === current ? "true" : undefined}
               onClick={(event) => rememberChoice(locale, event)}
               className="block rounded-full px-2.5 py-1.5 uppercase text-muted transition-colors hover:text-fg aria-[current=true]:bg-accent aria-[current=true]:text-accent-fg"
             >
-              <span aria-hidden="true">{locale}</span>
-              <span className="sr-only">{localeNames[locale]}</span>
+              {locale}
             </a>
           </li>
         ))}

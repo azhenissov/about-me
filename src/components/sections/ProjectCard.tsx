@@ -27,12 +27,12 @@ export function ProjectCard({ project, locale, dict, newTabHint }: ProjectCardPr
       {(project.repoUrl ?? project.demoUrl) && (
         <div className="mt-5 flex gap-5 text-sm">
           {project.repoUrl && (
-            <ExternalLink href={project.repoUrl} newTabHint={`${title} ${newTabHint}`} className={linkClass}>
+            <ExternalLink href={project.repoUrl} newTabHint={newTabHint} className={linkClass}>
               {dict.repo}
             </ExternalLink>
           )}
           {project.demoUrl && (
-            <ExternalLink href={project.demoUrl} newTabHint={`${title} ${newTabHint}`} className={linkClass}>
+            <ExternalLink href={project.demoUrl} newTabHint={newTabHint} className={linkClass}>
               {dict.demo}
             </ExternalLink>
           )}
