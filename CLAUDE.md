@@ -44,7 +44,7 @@ src/
       kk.json
   content/
     profile.ts              # имя, роль, контакты, ссылки
-    about.ts                # био и интересы
+    about.ts                # био
     education.ts
     projects.ts
     learning.ts             # чему хочу научиться
@@ -54,7 +54,7 @@ src/
     layout/                 # Header, Footer, SkipLink, LanguageSwitcher, ThemeToggle/Script
     sections/               # Hero, About, Education, Projects(+ProjectCard), Learning, Contact
     seo/                    # PersonJsonLd (schema.org)
-    ui/                     # мелкие переиспользуемые: Container, Section, Tag, ExternalLink
+    ui/                     # мелкие переиспользуемые: Container, Section, ExternalLink
   lib/
     seo.ts                  # хелперы для metadata, alternates/hreflang
 ```

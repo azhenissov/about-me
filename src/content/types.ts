@@ -18,7 +18,6 @@ export type Profile = {
 
 export type About = {
   bio: LocalizedString[];
-  interests: LocalizedString[];
 };
 
 export type EducationItem = {

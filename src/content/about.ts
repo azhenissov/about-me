@@ -13,22 +13,4 @@ export const about: About = {
       en: "AI tools help me validate ideas faster, build prototypes and ship features to production while keeping the architecture clear and the code quality high.",
     },
   ],
-  interests: [
-    { kk: "AI-әзірлеу", ru: "AI-разработка", en: "AI engineering" },
-    { kk: "LLM-агенттер", ru: "LLM-агенты", en: "LLM agents" },
-    { kk: "Прототиптеу", ru: "Прототипирование", en: "Rapid prototyping" },
-    { kk: "React & TS", ru: "React & TS", en: "React & TS" },
-    { kk: "Backend & API", ru: "Backend & API", en: "Backend & API" },
-    { kk: "Микросервистер", ru: "Микросервисы", en: "Microservices" },
-    {
-      kk: "Үш тіл: қазақша, орысша, ағылшынша",
-      ru: "Три языка: казахский, русский, английский",
-      en: "Three languages: Kazakh, Russian, English",
-    },
-    {
-      kk: "Алгоритмдік есептер шығару",
-      ru: "Решать алгоритмические задачи",
-      en: "Solving algorithm problems",
-    },
-  ],
 };
