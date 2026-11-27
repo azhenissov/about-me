@@ -47,5 +47,9 @@
   },
   "footer": {
     "builtWith": "Next.js, TypeScript және Tailwind CSS негізінде жасалған"
+  },
+  "notFound": {
+    "title": "Бет табылмады",
+    "back": "Басты бетке өту"
   }
 }

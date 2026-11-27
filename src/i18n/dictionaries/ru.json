@@ -47,5 +47,9 @@
   },
   "footer": {
     "builtWith": "Сделано на Next.js, TypeScript и Tailwind CSS"
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "back": "На главную"
   }
 }

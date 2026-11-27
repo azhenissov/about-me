@@ -47,5 +47,9 @@
   },
   "footer": {
     "builtWith": "Built with Next.js, TypeScript and Tailwind CSS"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "back": "Go to the home page"
   }
 }

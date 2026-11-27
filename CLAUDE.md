@@ -15,9 +15,10 @@
 ## Языки и маршруты
 
 - Локали: `kk`, `ru`, `en`. Маршруты: `/kk`, `/ru`, `/en`.
-- `/` → редирект на язык из `Accept-Language` (в `src/proxy.ts`; в Next < 16 это `middleware.ts`). Если совпадений нет → `en`.
-- Все страницы статически генерируются через `generateStaticParams` для каждой локали.
-- Переключатель языка в шапке сохраняет текущий якорь секции.
+- Любой путь без локали → редирект в `src/proxy.ts` (в Next 16 `middleware` переименован в `proxy`). Порядок: cookie `NEXT_LOCALE` (явный выбор) → `Accept-Language` → `en`.
+- Все страницы статически генерируются через `generateStaticParams` для каждой локали (включены `cacheComponents`).
+- Переключатель языка в шапке сохраняет текущий якорь секции и запоминает выбор в cookie.
+- Несуществующие URL → `app/global-not-found.tsx` (на трёх языках).
 
 ## Структура папок
 
@@ -28,26 +29,34 @@ src/
       layout.tsx            # <html lang>, шрифты, скрипт темы, Header/Footer
       page.tsx              # собирает секции
       opengraph-image.tsx   # OG-картинка для каждого языка
+    global-not-found.tsx    # 404 для любых несуществующих URL
     sitemap.ts
     robots.ts
+    icon.svg
     globals.css             # Tailwind + дизайн-токены (светлая/тёмная тема)
-  proxy.ts                  # определение языка по Accept-Language
+  proxy.ts                  # определение языка по cookie / Accept-Language
+  assets/fonts/             # Inter TTF для OG-картинок (кириллица + казахские буквы)
   i18n/
     config.ts               # locales, defaultLocale, isLocale(), type Locale
+    negotiate.ts            # разбор Accept-Language без библиотек
     get-dictionary.ts       # Record<Locale, Dictionary> — TS ловит пропущенные ключи
     dictionaries/
       en.json               # эталон: type Dictionary = typeof en
       ru.json
       kk.json
   content/
-    profile.ts              # имя, контакты, ссылки (не переводимое)
-    projects.ts             # проекты: title/description как LocalizedString
+    profile.ts              # имя, роль, контакты, ссылки
+    about.ts                # био и интересы
     education.ts
+    projects.ts
+    learning.ts             # чему хочу научиться
+    sections.ts             # id секций = якоря = ключи навигации
     types.ts                # LocalizedString = Record<Locale, string>, Project и т.п.
   components/
-    layout/                 # Header, Footer, SkipLink, LanguageSwitcher, ThemeToggle
-    sections/               # Hero, About, Education, Projects, Learning, Contact
-    ui/                     # мелкие переиспользуемые: Section, Tag, ExternalLink
+    layout/                 # Header, Footer, SkipLink, LanguageSwitcher, ThemeToggle/Script
+    sections/               # Hero, About, Education, Projects(+ProjectCard), Learning, Contact
+    seo/                    # PersonJsonLd (schema.org)
+    ui/                     # мелкие переиспользуемые: Container, Section, Tag, ExternalLink
   lib/
     seo.ts                  # хелперы для metadata, alternates/hreflang
 ```
@@ -84,6 +93,8 @@ src/
 npm run dev      # dev-сервер
 npm run build    # production-сборка (заодно проверка типов)
 npm run lint     # ESLint
+npm run typecheck # tsc --noEmit (быстрая проверка словарей и типов)
+npm run check    # lint + typecheck + build — всё, что нужно перед коммитом
 npm run start    # запуск собранного приложения
 ```
 

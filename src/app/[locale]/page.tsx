@@ -5,6 +5,7 @@ import { Education } from "@/components/sections/Education";
 import { Hero } from "@/components/sections/Hero";
 import { Learning } from "@/components/sections/Learning";
 import { Projects } from "@/components/sections/Projects";
+import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
 import { isLocale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/get-dictionary";
 
@@ -22,6 +23,7 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
       <Projects locale={locale} dict={dict.projects} newTabHint={newTabHint} />
       <Learning locale={locale} dict={dict.learning} />
       <Contact dict={dict.contact} newTabHint={newTabHint} />
+      <PersonJsonLd locale={locale} />
     </main>
   );
 }
