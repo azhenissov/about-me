@@ -1,26 +1,25 @@
 import type { Profile } from "./types";
 
-// TODO: replace placeholders with real data.
 export const profile: Profile = {
   name: {
-    kk: "Сіздің атыңыз",
-    ru: "Ваше Имя",
-    en: "Your Name",
+    kk: "Ануар Женисов",
+    ru: "Ануар Женисов",
+    en: "Anuar Zhenissov",
   },
   role: {
-    kk: "AI-әзірлеуші · студент",
-    ru: "AI-разработчик · студент",
-    en: "AI developer · student",
+    kk: "Software Engineer · AI Engineer",
+    ru: "Software Engineer · AI Engineer",
+    en: "Software Engineer · AI Engineer",
   },
   tagline: {
-    kk: "Мұнда өзіңіз туралы бір-екі сөйлем: не істейсіз және не қызықтырады.",
-    ru: "Здесь одно-два предложения о себе: чем занимаетесь и что вам интересно.",
-    en: "One or two sentences about yourself: what you do and what excites you.",
+    kk: "Бағдарламалық қамтамасыз ету әзірлеушісі мамандығында оқимын және практикалық жүйелер құрастырамын — Python мен Go-дағы бэкендтен React пен TypeScript-тегі интерфейстерге дейін. Қазір AI-әзірлеуді және Claude Code сияқты агенттердің көмегімен өнімдерді жылдам прототиптеуді белсенді меңгеріп жүрмін.",
+    ru: "Учусь на разработчика ПО и собираю практические системы — от бэкенда на Python и Go до интерфейсов на React и TypeScript. Сейчас активно прокачиваю AI-разработку и быстрое прототипирование продуктов с помощью агентов вроде Claude Code.",
+    en: "Software engineering student building practical systems — from Python and Go backends to React and TypeScript interfaces. Currently leveling up in AI engineering and rapid product prototyping with coding agents like Claude Code.",
   },
-  email: "you@example.com",
+  email: "zhenisovanuar@gmail.com",
   links: [
-    { label: "GitHub", href: "https://github.com/your-username" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/your-username" },
-    { label: "Telegram", href: "https://t.me/your-username" },
+    { label: "GitHub", href: "https://github.com/azhenissov" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/anuar-zhenissov" },
+    { label: "Telegram", href: "https://t.me/azhenissov" },
   ],
 };

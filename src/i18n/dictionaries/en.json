@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Your Name — AI Developer",
-    "description": "Personal page: interests, education, projects and what I want to learn."
+    "title": "Anuar Zhenissov — Software Engineer, AI Engineer",
+    "description": "Anuar Zhenissov, Software Engineer and AI Engineer from Astana: Python and Go backends, React + TypeScript, AI engineering. Projects, education and contacts."
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -28,7 +28,7 @@
     "interests": "Interests"
   },
   "education": {
-    "title": "Education"
+    "title": "Education & experience"
   },
   "projects": {
     "title": "Projects",
@@ -42,7 +42,7 @@
   },
   "contact": {
     "title": "Contact",
-    "intro": "Open to an internship and interesting projects. The fastest way to reach me is email.",
+    "intro": "Open to internships and interesting projects. The fastest way to reach me is email or Telegram.",
     "email": "Email"
   },
   "footer": {

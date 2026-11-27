@@ -1,6 +1,5 @@
 import type { LearningGoal } from "./types";
 
-// TODO: replace placeholders with real data.
 export const learningGoals: LearningGoal[] = [
   {
     title: { kk: "Firebase", ru: "Firebase", en: "Firebase" },

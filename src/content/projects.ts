@@ -1,7 +1,35 @@
 import type { Project } from "./types";
 
-// TODO: replace placeholders with real data.
 export const projects: Project[] = [
+  {
+    id: "document-platform",
+    title: {
+      kk: "Құжат айналымы платформасы",
+      ru: "Платформа документооборота",
+      en: "Document management platform",
+    },
+    description: {
+      kk: "ҚР ҚМА-дағы тағылымдама жобасы. Құжаттар мен тредтер, рөлдік қолжетімділік (RBAC) және мәртебелер, Excel импорты және ZIP-экспорт. Бэкенд, дерекқор, интерфейс, тесттер және Docker — менің жұмысым.",
+      ru: "Проект стажировки в АФМ РК. Документы и треды, ролевой доступ (RBAC) и статусы, импорт Excel и ZIP-выгрузка. Делал бэкенд, БД, интерфейс, тесты и Docker.",
+      en: "Internship project at the Financial Monitoring Agency. Documents and threads, role-based access (RBAC) and statuses, Excel import and ZIP export. I built the backend, database, UI, tests and Docker setup.",
+    },
+    stack: ["FastAPI", "PostgreSQL", "React", "TypeScript", "Redis", "Docker"],
+  },
+  {
+    id: "order-payment-microservices",
+    title: {
+      kk: "Order-Payment Microservices",
+      ru: "Order-Payment Microservices",
+      en: "Order-Payment Microservices",
+    },
+    description: {
+      kk: "Go тіліндегі тапсырыс және төлем сервистері: gRPC арқылы байланыс, мәртебелерді нақты уақытта стримингтеу, оқшауланған дерекқорлар және CI/CD.",
+      ru: "Сервисы заказов и оплат на Go: общение по gRPC, стриминг статусов в реальном времени, изолированные базы данных и CI/CD.",
+      en: "Order and payment services in Go: gRPC communication, real-time status streaming, isolated databases and CI/CD.",
+    },
+    stack: ["Go", "gRPC", "Protobuf", "PostgreSQL", "Docker"],
+    repoUrl: "https://github.com/azhenissov/order-payment-microservices",
+  },
   {
     id: "this-site",
     title: {
@@ -10,41 +38,11 @@ export const projects: Project[] = [
       en: "This site",
     },
     description: {
-      kk: "Next.js, TypeScript және Tailwind CSS негізіндегі үш тілді визитка-сайт.",
-      ru: "Трёхъязычный сайт-визитка на Next.js, TypeScript и Tailwind CSS.",
-      en: "A trilingual personal site built with Next.js, TypeScript and Tailwind CSS.",
+      kk: "Үш тілді визитка-сайт: өз i18n-і типтелген сөздіктермен, жарық/қараңғы тақырып, SEO және Lighthouse 95+.",
+      ru: "Трёхъязычный сайт-визитка: свой i18n на типизированных словарях, светлая/тёмная тема, SEO и Lighthouse 95+.",
+      en: "A trilingual personal site: custom i18n with typed dictionaries, light/dark theme, SEO and Lighthouse 95+.",
     },
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    repoUrl: "https://github.com/your-username/about-me",
-  },
-  {
-    id: "project-2",
-    title: {
-      kk: "Жоба 2",
-      ru: "Проект 2",
-      en: "Project 2",
-    },
-    description: {
-      kk: "Жобаның қысқаша сипаттамасы: қандай мәселені шешеді және сіздің рөліңіз.",
-      ru: "Краткое описание проекта: какую задачу решает и ваша роль.",
-      en: "Short project description: what problem it solves and your role.",
-    },
-    stack: ["Python", "FastAPI"],
-    repoUrl: "https://github.com/your-username/project-2",
-    demoUrl: "https://example.com",
-  },
-  {
-    id: "project-3",
-    title: {
-      kk: "Жоба 3",
-      ru: "Проект 3",
-      en: "Project 3",
-    },
-    description: {
-      kk: "Жобаның қысқаша сипаттамасы: қандай мәселені шешеді және сіздің рөліңіз.",
-      ru: "Краткое описание проекта: какую задачу решает и ваша роль.",
-      en: "Short project description: what problem it solves and your role.",
-    },
-    stack: ["React", "Firebase"],
+    repoUrl: "https://github.com/azhenissov/about-me",
   },
 ];
