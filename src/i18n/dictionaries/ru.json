@@ -5,5 +5,20 @@
   },
   "common": {
     "skipToContent": "Перейти к содержимому"
+  },
+  "header": {
+    "nav": "Разделы",
+    "language": "Язык",
+    "theme": "Тёмная тема"
+  },
+  "nav": {
+    "about": "Обо мне",
+    "education": "Обучение",
+    "projects": "Проекты",
+    "learning": "Цели",
+    "contact": "Контакты"
+  },
+  "footer": {
+    "builtWith": "Сделано на Next.js, TypeScript и Tailwind CSS"
   }
 }

@@ -1,1 +1,69 @@
 @import "tailwindcss";
+
+/* Dark mode follows the data-theme attribute set by ThemeScript / ThemeToggle. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  color-scheme: light;
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --fg: #1c1917;
+  --muted: #57534e;
+  --border: #e7e5e4;
+  --accent: #4338ca;
+  --accent-fg: #ffffff;
+  --accent-soft: #eef2ff;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0c0a09;
+  --surface: #1c1917;
+  --fg: #f5f5f4;
+  --muted: #a8a29e;
+  --border: #292524;
+  --accent: #a5b4fc;
+  --accent-fg: #1e1b4b;
+  --accent-soft: #1e1b4b;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep anchored section titles visible below the sticky header. */
+  scroll-padding-top: 7rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

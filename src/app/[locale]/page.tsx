@@ -8,8 +8,8 @@ export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const dict = getDictionary(locale);
 
   return (
-    <main>
-      <h1>{dict.meta.title}</h1>
+    <main id="main" tabIndex={-1} className="flex-1">
+      <h1 id="top">{dict.meta.title}</h1>
     </main>
   );
 }

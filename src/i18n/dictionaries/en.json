@@ -5,5 +5,20 @@
   },
   "common": {
     "skipToContent": "Skip to content"
+  },
+  "header": {
+    "nav": "Sections",
+    "language": "Language",
+    "theme": "Dark theme"
+  },
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "projects": "Projects",
+    "learning": "Learning",
+    "contact": "Contact"
+  },
+  "footer": {
+    "builtWith": "Built with Next.js, TypeScript and Tailwind CSS"
   }
 }
