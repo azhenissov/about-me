@@ -2,14 +2,30 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { profile } from "@/content/profile";
-import { defaultLocale, isLocale, locales } from "@/i18n/config";
+import { defaultLocale, isLocale, locales, type Locale } from "@/i18n/config";
+import { getDictionary } from "@/i18n/get-dictionary";
 
-export const size = { width: 1200, height: 630 };
-export const contentType = "image/png";
-export const alt = profile.name[defaultLocale];
+const size = { width: 1200, height: 630 };
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
+}
+
+function toLocale(value: string): Locale {
+  return isLocale(value) ? value : defaultLocale;
+}
+
+// A static `alt` export can't vary by language; this gives each locale its own og:image:alt.
+export function generateImageMetadata({ params }: { params: { locale: string } }) {
+  const locale = toLocale(params.locale);
+  return [
+    {
+      id: "default",
+      alt: getDictionary(locale).meta.title,
+      size,
+      contentType: "image/png",
+    },
+  ];
 }
 
 // The default OG font has no Cyrillic glyphs, so ship Inter (covers Kazakh letters).
@@ -20,8 +36,7 @@ export default async function OpengraphImage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale: param } = await params;
-  const locale = isLocale(param) ? param : defaultLocale;
+  const locale = toLocale((await params).locale);
 
   return new ImageResponse(
     (
@@ -38,7 +53,7 @@ export default async function OpengraphImage({
           fontFamily: "Inter",
         }}
       >
-        <div style={{ fontSize: 36, color: "#a5b4fc" }}>{profile.role[locale]}</div>
+        <div style={{ fontSize: 30, color: "#a5b4fc" }}>{profile.role[locale]}</div>
         <div style={{ fontSize: 96, marginTop: 16, letterSpacing: -2 }}>
           {profile.name[locale]}
         </div>
