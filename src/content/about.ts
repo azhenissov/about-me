@@ -10,7 +10,7 @@ export const about: About = {
     {
       kk: "AI-құралдар идеяларды тезірек тексеруге, прототиптер жасауға және функцияларды релизге дейін жеткізуге көмектеседі — архитектураны түсінікті, ал кодты сапалы күйде сақтай отырып.",
       ru: "AI-инструменты помогают мне быстрее проверять идеи, собирать прототипы и доводить фичи до релиза, сохраняя понятную архитектуру и качество кода.",
-      en: "AI tools help me validate ideas faster, build prototypes and ship features to release while keeping the architecture clear and the code quality high.",
+      en: "AI tools help me validate ideas faster, build prototypes and ship features to production while keeping the architecture clear and the code quality high.",
     },
   ],
   interests: [
@@ -20,5 +20,15 @@ export const about: About = {
     { kk: "React & TS", ru: "React & TS", en: "React & TS" },
     { kk: "Backend & API", ru: "Backend & API", en: "Backend & API" },
     { kk: "Микросервистер", ru: "Микросервисы", en: "Microservices" },
+    {
+      kk: "Үш тіл: қазақша, орысша, ағылшынша",
+      ru: "Три языка: казахский, русский, английский",
+      en: "Three languages: Kazakh, Russian, English",
+    },
+    {
+      kk: "Алгоритмдік есептер шығару",
+      ru: "Решать алгоритмические задачи",
+      en: "Solving algorithm problems",
+    },
   ],
 };
