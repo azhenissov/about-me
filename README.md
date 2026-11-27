@@ -2,7 +2,7 @@
 
 Одностраничный сайт-визитка на трёх языках: казахском, русском и английском.
 
-**Демо:** _ссылка появится после деплоя на Vercel_
+**Демо:** https://about-me-one-weld.vercel.app (`/kk` · `/ru` · `/en`)
 
 **Стек:** Next.js 16 (App Router) · TypeScript (strict) · Tailwind CSS 4 · Vercel. Runtime-зависимости только `next`, `react` и `react-dom`.
 
@@ -16,12 +16,12 @@
 - **Весь контент в данных:** в JSX нет ни одной строки текста.
 - **Статика:** все языковые версии и OG-картинки собираются при сборке.
 
-Lighthouse (локально, production-сборка):
+Lighthouse на продакшене (Vercel):
 
 | | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| Mobile | 97 | 100 | 100 | 100 |
-| Desktop | 100 | 100 | 100 | 100 |
+| Mobile (`/ru`) | 99 | 100 | 100 | 100 |
+| Desktop (`/en`) | 96 | 100 | 100 | 100 |
 
 ## Как устроен i18n
 
