@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Ануар Женисов — Software Engineer, AI Engineer",
-    "description": "Ануар Женисов, Software Engineer и AI Engineer из Астаны: бэкенд на Python и Go, React + TypeScript, AI-разработка. Проекты, обучение и контакты."
+    "title": "Ануар Женисов — студент Software Engineering · Backend и AI-разработка",
+    "description": "Ануар Женисов, студент Software Engineering из Астаны: бэкенд на Python и Go, React + TypeScript и разработка с AI-инструментами. Проекты, обучение и контакты."
   },
   "common": {
     "skipToContent": "Перейти к содержимому",
@@ -33,7 +33,7 @@
   "projects": {
     "title": "Проекты",
     "stack": "Технологии",
-    "repo": "Код",
+    "repo": "Исходный код",
     "demo": "Демо"
   },
   "learning": {

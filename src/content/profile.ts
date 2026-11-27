@@ -7,9 +7,9 @@ export const profile: Profile = {
     en: "Anuar Zhenissov",
   },
   role: {
-    kk: "Software Engineer · AI Engineer",
-    ru: "Software Engineer · AI Engineer",
-    en: "Software Engineer · AI Engineer",
+    kk: "Software Engineering студенті · Backend және AI-әзірлеу",
+    ru: "Студент Software Engineering · Backend и AI-разработка",
+    en: "Software Engineering student · Backend & AI development",
   },
   tagline: {
     kk: "Бағдарламалық қамтамасыз ету әзірлеушісі мамандығында оқимын және практикалық жүйелер құрастырамын — Python мен Go-дағы бэкендтен React пен TypeScript-тегі интерфейстерге дейін. Қазір AI-әзірлеуді және Claude Code сияқты агенттердің көмегімен өнімдерді жылдам прототиптеуді белсенді меңгеріп жүрмін.",
