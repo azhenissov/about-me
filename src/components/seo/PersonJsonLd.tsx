@@ -1,4 +1,3 @@
-import { about } from "@/content/about";
 import { profile } from "@/content/profile";
 import type { Locale } from "@/i18n/config";
 import { getSiteUrl } from "@/lib/seo";
@@ -18,7 +17,6 @@ export function PersonJsonLd({ locale }: PersonJsonLdProps) {
     email: `mailto:${profile.email}`,
     url: new URL(`/${locale}`, getSiteUrl()).toString(),
     sameAs: profile.links.map((link) => link.href),
-    knowsAbout: about.interests.map((interest) => interest[locale]),
   };
 
   return (
