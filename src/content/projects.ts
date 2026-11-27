@@ -27,7 +27,7 @@ export const projects: Project[] = [
       ru: "Сервисы заказов и оплат на Go: общение по gRPC, стриминг статусов в реальном времени, изолированные базы данных и CI/CD.",
       en: "Order and payment services in Go: gRPC communication, real-time status streaming, isolated databases and CI/CD.",
     },
-    stack: ["Go", "gRPC", "Protobuf", "PostgreSQL", "Docker"],
+    stack: ["Go", "gRPC", "Protobuf", "PostgreSQL", "Redis", "RabbitMQ", "Docker"],
     repoUrl: "https://github.com/azhenissov/order-payment-microservices",
   },
   {
