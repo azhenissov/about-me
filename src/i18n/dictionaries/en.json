@@ -4,7 +4,8 @@
     "description": "Personal page: interests, education, projects and what I want to learn."
   },
   "common": {
-    "skipToContent": "Skip to content"
+    "skipToContent": "Skip to content",
+    "newTab": "(opens in a new tab)"
   },
   "header": {
     "nav": "Sections",
@@ -17,6 +18,32 @@
     "projects": "Projects",
     "learning": "Learning",
     "contact": "Contact"
+  },
+  "hero": {
+    "ctaProjects": "See projects",
+    "ctaContact": "Get in touch"
+  },
+  "about": {
+    "title": "About me",
+    "interests": "Interests"
+  },
+  "education": {
+    "title": "Education"
+  },
+  "projects": {
+    "title": "Projects",
+    "stack": "Technologies",
+    "repo": "Code",
+    "demo": "Demo"
+  },
+  "learning": {
+    "title": "What I want to learn",
+    "intro": "Technologies and skills I am working on next."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Open to an internship and interesting projects. The fastest way to reach me is email.",
+    "email": "Email"
   },
   "footer": {
     "builtWith": "Built with Next.js, TypeScript and Tailwind CSS"

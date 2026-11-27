@@ -12,6 +12,11 @@ export const profile: Profile = {
     ru: "AI-разработчик · студент",
     en: "AI developer · student",
   },
+  tagline: {
+    kk: "Мұнда өзіңіз туралы бір-екі сөйлем: не істейсіз және не қызықтырады.",
+    ru: "Здесь одно-два предложения о себе: чем занимаетесь и что вам интересно.",
+    en: "One or two sentences about yourself: what you do and what excites you.",
+  },
   email: "you@example.com",
   links: [
     { label: "GitHub", href: "https://github.com/your-username" },
